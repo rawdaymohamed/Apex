@@ -7,6 +7,7 @@ $(document).ready(function () {
         items: 1,
         smartSpeed: 1000,
         dots: false,
+        // navText: ["PREV", "NEXT"],
         responsive: {
             0: {
 

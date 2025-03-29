@@ -138,3 +138,43 @@ img {
 .btn-outline-light:hover {
     color: #202020 !important;
 }
+
+.slider-wrapper {
+    margin-bottom: -12px;
+}
+
+/* OWL SLIDER */
+.owl-prev,
+.owl-next {
+    position: absolute;
+    top: 50%;
+    z-index: 888;
+    width: 60px !important;
+    height: 60px !important;
+    display: grid;
+    place-items: center;
+    background-color: #202020;
+    margin-top: -30px;
+    color: #fff !important;
+    font-weight: 700;
+    border-radius: 100% !important;
+}
+
+.owl-prev {
+    left: 0;
+}
+
+.owl-next {
+    right: 0;
+}
+
+.owl-prev span,
+.owl-next span {
+    font-size: 32px;
+    line-height: 1;
+}
+
+.owl-next:hover,
+.owl-prev:hover {
+    background-color: #ffd100 !important;
+}
