@@ -28,6 +28,20 @@ img {
     width: 100%;
 }
 
+.bg-cover {
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+@media screen and (max-width:639px) {
+
+    .bg-cover {
+        background-position: top right !important;
+        background-size: cover !important;
+    }
+}
+
+
 /* NAVBAR */
 .top-nav {
     background-color: #ffd100;
@@ -60,7 +74,7 @@ img {
 .navbar-brand {
     font-weight: 700;
     font-weight: 28px;
-    color: #202020 !important;
+    color: #202020;
 }
 
 .navbar-brand span {
@@ -82,11 +96,45 @@ img {
 }
 
 .btn-brand {
-    background-color: #ffd100;
+    background-color: #ffd100 !important;
     color: #fff !important;
 }
 
 .btn-brand:hover {
-    background-color: #f5ca0a;
+    background-color: #f3c705 !important;
     color: #fff !important;
+}
+
+.btn-brand:focus,
+.btn-brand:active {
+    box-shadow: 0 0 0 0.25rem rgba(255, 209, 0, 0.5);
+    /* Bootstrap 5 style with your yellow */
+    background-color: #e6b800;
+    /* Slightly darker yellow when active */
+    border-color: #ffd100;
+    /* Keeps border yellow */
+}
+
+
+
+/* SLIDER */
+.slide1 {
+    background: linear-gradient(rgba(51, 53, 51, 0.4), rgba(49, 49, 49, 0.4)),
+        url(../imgs/bg_banner1.jpg);
+
+}
+
+.slide2 {
+    background: linear-gradient(rgba(51, 53, 51, 0.4), rgba(49, 49, 49, 0.4)),
+        url(../imgs/bg_banner2.jpg);
+
+}
+
+
+.btn-outline-light {
+    color: #fff !important;
+}
+
+.btn-outline-light:hover {
+    color: #202020 !important;
 }
