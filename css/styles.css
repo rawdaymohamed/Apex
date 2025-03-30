@@ -43,6 +43,10 @@ img {
 
 
 /* NAVBAR */
+.nav-contact-info-label {
+    font-size: 13px;
+}
+
 .top-nav {
     background-color: #ffd100;
     padding: 5px 0;
