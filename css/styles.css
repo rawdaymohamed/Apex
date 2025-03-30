@@ -11,7 +11,7 @@ body {
 }
 
 section {
-    scroll-margin-top: 80px;
+    /* scroll-margin-top: 80px; */
 }
 
 h1,
@@ -165,7 +165,6 @@ img {
     display: grid;
     place-items: center;
     background-color: #202020;
-    margin-top: -30px;
     color: #fff !important;
     font-weight: 700;
     border-radius: 100% !important;
