@@ -13,7 +13,9 @@
         <title>Apex</title>
     </head>
 
-    <body>
+    <!-- Added overflow-auto and position-relative to body for proper ScrollSpy -->
+
+    <body data-bs-spy="scroll" data-bs-target="#navbarNav" class="position-relative overflow-auto">
         <nav class="top-nav" id="home">
             <div class="container">
                 <div class="row justify-content-between">
@@ -28,21 +30,18 @@
                     </div>
                     <div class="col-auto">
                         <div class="social-links d-flex">
-                            <a class="d-flex" href="
-                            #"><i class='bx bxl-facebook'></i></a>
-                            <a class="d-flex" href="
-                            #"><i class='bx bxl-twitter'></i></a>
-                            <a class="d-flex" href="
-                            #"><i class='bx bxl-github'></i></a>
-                            <a class="d-flex" href="
-                            #"><i class='bx bxl-youtube'></i></a>
+                            <a class="d-flex" href="#"><i class='bx bxl-facebook'></i></a>
+                            <a class="d-flex" href="#"><i class='bx bxl-twitter'></i></a>
+                            <a class="d-flex" href="#"><i class='bx bxl-github'></i></a>
+                            <a class="d-flex" href="#"><i class='bx bxl-youtube'></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
         <!-- Main Nav -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="#">Apex<span>.</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -52,28 +51,28 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">About</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Services</a>
+                            <a class="nav-link" href="#services">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Portfolio</a>
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Team</a>
+                            <a class="nav-link" href="#team">Team</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Reviews</a>
+                            <a class="nav-link" href="#reviews">Reviews</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Blog</a>
+                            <a class="nav-link" href="#blog">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="btn btn-brand ms-lg-3">Contact</a>
+                            <a href="#contact" class="btn btn-brand ms-lg-3">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -105,13 +104,25 @@
                     </div>
                 </div>
             </div>
-
         </div>
+
+
+        <section id="about" class="py-5">
+            <h1>About</h1>
+        </section>
+        <section id="services" class="py-5">Services Section Content</section>
+        <section id="portfolio" class="py-5">Portfolio Section Content</section>
+        <section id="team" class="py-5">Team Section Content</section>
+        <section id="reviews" class="py-5">Reviews Section Content</section>
+        <section id="blog" class="py-5">Blog Section Content</section>
+        <section id="contact" class="py-5">Contact Section Content</section>
 
         <script src="./js/jquery-3.7.1.min.js"></script>
         <script src="./js/bootstrap.bundle.min.js"></script>
         <script src="./js/owl.carousel.min.js"></script>
+        <script src="./js/utils.js"></script>
         <script src="./js/app.js"></script>
+
     </body>
 
 </html>
